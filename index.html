@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Дизайн-студия «Нёрдс»</title>
-  </head>
-  <body>
-    <header class="main-header">
+
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия «Нёрдс»</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <div class="main-header-logo">
           <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-        </a>
+        </div>
         <ul class="site-navigation">
           <li><a href="nerds.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
@@ -20,69 +23,77 @@
           <li class="cart-link">Корзина</li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main class="container">
-      <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+  <main>
+    <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
 
-      <section class="promos">
-        <h2 class="visually-hidden">Слоганы</h2>
+    <section class="promo">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="promos-list">
           <li class="promo-item">
-            <p><b>Долго, дорого, скрупулезно.</b></p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <a class="button" href="#">Узнать больше</a>
+            <p class="promo-heading">Долго, дорого, скрупулезно.</p>
+            <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a class="button promo-btn" href="#">Узнать больше</a>
           </li>
           <li class="promo-item">
-            <p><b>Любим математику как никто другой</b></p>
-            <p>Никакого креативаб только математические формулы для расчета идеальных пропорций</p>
-            <a class="button" href="#">Узнать больше</a>
+            <p class="promo-heading">Любим математику как никто другой</p>
+            <p class="text">Никакого креативаб только математические формулы для расчета идеальных пропорций</p>
+            <a class="button promo-btn" href="#">Узнать больше</a>
           </li>
           <li class="promo-item">
-            <p><b>Только ночь, только хардкор</b></p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button" href="#">Узнать больше</a>
+            <p class="promo-heading">Только ночь, только хардкор</p>
+            <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button promo-btn" href="#">Узнать больше</a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
+    <div class="container">
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="sevice-item">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="catalog.html">Заказать</a>
+            <h3 class="title service-title">Веб-сайты</h3>
+            <p class="text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button site-btn" href="catalog.html">Заказать</a>
           </li>
           <li class="sevice-item">
-            <h3>Приложения</h3>
+            <h3 class="title service-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button" href="catalog.html">Заказать</a>
+            <a class="button app-btn" href="catalog.html">Заказать</a>
           </li>
           <li class="sevice-item">
-            <h3>Презентации</h3>
+            <h3 class="title service-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button" href="catalog.html">Заказать</a>
+            <a class="button present-btn" href="catalog.html">Заказать</a>
           </li>
         </ul>
       </section>
 
       <section class=info>
         <h2 class="visually-hidden">О нас</h2>
-        <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p><b>Выполняем заказы на разработку:</b><p>
+        <section class="info-features">
+          <h3 class="visually-hidden">Виды услуг</h3>
+          <p class="heading info-heading">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="caption">Выполняем заказы на разработку:</p>
           <ul class="info-list">
             <li class="info-item">Веб-сайтов любой сложности</li>
             <li class="info-item">Мобильные приложения для iOS и Android</li>
             <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
-          <a class="info-logo">
+        </section>
+        <section class="info-stats">
+          <h3 class="visually-hidden">Статистика</h3>
+          <div class="info-logo">
             <img src="http://placehold.it/360x208" width="360" height="208" alt="Логотип дизайн-студии «Нёрдс»">
-          </a>
+          </div>
           <table class="info-table">
-            <caption><b>С 2004 года любим точность во всем:</b></caption>
+            <caption class="caption"><b>С 2004 года любим точность во всем:</b></caption>
             <tr>
               <th>146<sup>%</sup></th>
               <th>100<sup>%</sup></th>
@@ -94,43 +105,60 @@
               <td>Минимальная предоплата</td>
             </tr>
           </table>
+        </section>
       </section>
 
-      <section class="catalog">
-        <h2 class="visually-hidden">Каталог</h2>
+      <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
         <ul class="catalog-list">
-          <li class="catalog-item"><a href="catalog-item.html">html academy</a></li>
+          <li class="catalog-item"><a href="http://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
           <li class="catalog-item"><a href="catalog-item.html">Барбершоп</a></li>
           <li class="catalog-item"><a href="catalog-item.html">Пинк</a></li>
           <li class="catalog-item"><a href="catalog-item.html">Мишка</a></li>
         </ul>
       </section>
-    </main>
+    </div>
 
-    <footer class="main-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p><b>NЁRDS DESIGN STUDIO</b><p>
-        <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7(812)275-75-75</p>
-        <a class="button" href="contacts.html">Напишите нам</a>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="map">
         <img src="http://placehold.it/1725x808" width="1725" height="808" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
         <img src="http://placehold.it/173x84" width="173" height="84" alt="Указатель офиса на карте">
-      </section>
+      </div>
+      <div class="container">
+        <section class="address">
+          <h3 class="title">Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="button contact-btn" href="contacts.html">Напишите нам</a>
+        </section>
+      </div>
+    </section>
 
-      <section class="footer-social">
+    <section class="modal modal-write">
+      <h2 class="visually-hidden">Форма для отправки письма</h2>
+      <p class="heading write-heading">Напишите нам</p>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <p><b>Давайте дружить, это выгодно!</b><p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </footer>
-  </body>
+      </div>
+      <div class="discount">
+        <p class="discount-caption">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

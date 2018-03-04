@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Дизайн-студия «Нёрдс»</title>
-  </head>
-  <body>
-    <header class="main-header">
+
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия «Нёрдс»</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-        </a>
+        <div class="main-header-logo">
+          <a href="index.html"><img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»"></a>
+        </div>
         <ul class="site-navigation">
           <li><a href="nerds.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a>Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="cart-navigation">
           <li class="cart-link">Корзина</li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main class="container">
+  <main>
+    <div class="container">
       <h1>Магазин готовых шаблонов</h1>
 
       <section class="filters">
@@ -32,84 +37,111 @@
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
+
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Sedona">
-            <h3>Sedona</h3>
-            <p>Информационный сайт<br>
-              для туристов</p>
-            <a class="button" href="#">9 900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Pink app">
-            <h3>Pink app</h3>
-            <p>Продуктовый лендинг<br>
-              приложения для iOS и Android</p>
-            <a class="button" href="#">9 900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Barbershop">
-            <h3>Barbershop</h3>
-            <p>Сайт салоны красоты.<br>
-              Для мужчин, да.</p>
-            <a class="button" href="#">9 900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Mishka">
-            <h3>Mishka</h3>
-            <p>Интернет магазин<br>
-              вязаных игрушек</p>
-            <a class="button" href="#">9 900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон A plus">
-            <h3>A plus</h3>
-            <p>Лендинг курсов повышения<br>
-              квалификации</p>
-            <a class="button" href="#">9 900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Кваст">
-            <h3>Кваст</h3>
-            <p>Промо-сайт производителя<br>
-              крафтового кваса</p>
-            <a class="button" href="#">9 900 руб.</a>
           </li>
         </ul>
+        <ul class="hover-list">
+          <li class="hover-item sedona">
+            <a href="#"><h3 class="title">Sedona</h3></a>
+            <p>Информационный сайт<br> для туристов</p>
+            <a class="button catalog-btn" href="#">9 900 руб.</a>
+          </li>
+          <li class="hover-item aplus">
+            <a href="#"><h3 class="title">Pink app</h3></a>
+            <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+            <a class="button catalog-btn" href="#">9 900 руб.</a>
+          </li>
+          <li class="hover-item kvast">
+            <a href="#"><h3 class="title">Barbershop</h3></a>
+            <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
+            <a class="button catalog-btn" href="#">9 900 руб.</a>
+          </li>
+          <li class="hover-item barbershop">
+            <a href="#"><h3 class="title">Mishka</h3></a>
+            <p>Интернет магазин<br> вязаных игрушек</p>
+            <a class="button catalog-btn" href="#">9 900 руб.</a>
+          </li>
+          <li class="hover-item mishka">
+            <a href="#"><h3 class="title">A plus</h3></a>
+            <p>Лендинг курсов повышения<br> квалификации
+            </p>
+            <a class="button catalog-btn" href="#">9 900 руб.</a>
+          </li>
+          <li class="hover-item pink">
+            <a href="#"><h3 class="title">Кваст</h3></a>
+            <p>Промо-сайт производителя<br> крафтового кваса</p>
+            <a class="button catalog-btn" href="#">9 900 руб.</a>
+          </li>
+
+        </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item pagination-item-current">1</li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
         </ul>
       </section>
-    </main>
 
-    <footer class="main-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p><b>NЁRDS DESIGN STUDIO</b><p>
-        <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7(812)275-75-75</p>
-        <a class="button" href="contacts.html">Напишите нам</a>
+      <section class="modal modal-write">
+        <h2 class="visually-hidden">Форма для отправки письма</h2>
+        <p class="heading write-heading">Напишите нам</p>
+        <!-- Здесь будет форма -->
+        <span class="modal-close">x</span>
+      </section>
+    </div>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="map">
         <img src="http://placehold.it/1725x808" width="1725" height="808" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
         <img src="http://placehold.it/173x84" width="173" height="84" alt="Указатель офиса на карте">
-      </section>
+      </div>
+      <div class="container">
+        <section class="address">
+          <h3 class="title">Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="button contact-btn" href="contacts.html">Напишите нам</a>
+        </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
-          </ul>
-        <p><b>Давайте дружить, это выгодно!</b><p>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="discount">
+        <p class="discount-caption">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
