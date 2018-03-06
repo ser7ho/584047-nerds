@@ -20,15 +20,20 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="cart-navigation">
-          <li class="cart-link">Корзина</li>
+          <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <div class="page-title">
+      <div class="container">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+
     <div class="container">
-      <h1>Магазин готовых шаблонов</h1>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -41,57 +46,55 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Sedona">
+            <div class="hover-item">
+              <a href="#"><h3 class="title">Sedona</h3></a>
+              <p>Информационный сайт<br> для туристов</p>
+              <a class="button catalog-btn" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Pink app">
+            <div class="hover-item">
+              <a href="#"><h3 class="title">Pink app</h3></a>
+              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+              <a class="button catalog-btn" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Barbershop">
+            <div class="hover-item">
+              <a href="#"><h3 class="title">Barbershop</h3></a>
+              <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
+              <a class="button catalog-btn" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Mishka">
+            <div class="hover-item">
+              <a href="#"><h3 class="title">Mishka</h3></a>
+              <p>Интернет магазин<br> вязаных игрушек</p>
+              <a class="button catalog-btn" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон A plus">
+            <div class="hover-item">
+              <a href="#"><h3 class="title">A plus</h3></a>
+              <p>Лендинг курсов повышения<br> квалификации
+              </p>
+              <a class="button catalog-btn" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/360x576" width="360" height="576" alt="Шаблон Кваст">
+            <div class="hover-item">
+              <a href="#"><h3 class="title">Кваст</h3></a>
+              <p>Промо-сайт производителя<br> крафтового кваса</p>
+              <a class="button catalog-btn" href="#">9 900 руб.</a>
+            </div>
           </li>
         </ul>
-        <ul class="hover-list">
-          <li class="hover-item sedona">
-            <a href="#"><h3 class="title">Sedona</h3></a>
-            <p>Информационный сайт<br> для туристов</p>
-            <a class="button catalog-btn" href="#">9 900 руб.</a>
-          </li>
-          <li class="hover-item aplus">
-            <a href="#"><h3 class="title">Pink app</h3></a>
-            <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-            <a class="button catalog-btn" href="#">9 900 руб.</a>
-          </li>
-          <li class="hover-item kvast">
-            <a href="#"><h3 class="title">Barbershop</h3></a>
-            <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
-            <a class="button catalog-btn" href="#">9 900 руб.</a>
-          </li>
-          <li class="hover-item barbershop">
-            <a href="#"><h3 class="title">Mishka</h3></a>
-            <p>Интернет магазин<br> вязаных игрушек</p>
-            <a class="button catalog-btn" href="#">9 900 руб.</a>
-          </li>
-          <li class="hover-item mishka">
-            <a href="#"><h3 class="title">A plus</h3></a>
-            <p>Лендинг курсов повышения<br> квалификации
-            </p>
-            <a class="button catalog-btn" href="#">9 900 руб.</a>
-          </li>
-          <li class="hover-item pink">
-            <a href="#"><h3 class="title">Кваст</h3></a>
-            <p>Промо-сайт производителя<br> крафтового кваса</p>
-            <a class="button catalog-btn" href="#">9 900 руб.</a>
-          </li>
 
-        </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">1</li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -100,12 +103,6 @@
         </ul>
       </section>
 
-      <section class="modal modal-write">
-        <h2 class="visually-hidden">Форма для отправки письма</h2>
-        <p class="heading write-heading">Напишите нам</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
-      </section>
     </div>
 
     <section class="contacts">
@@ -142,6 +139,12 @@
     </div>
   </footer>
 
+  <section class="modal modal-write">
+    <h2 class="visually-hidden">Форма для отправки письма</h2>
+    <p class="heading write-heading">Напишите нам</p>
+    <!-- Здесь будет форма -->
+    <span class="modal-close">x</span>
+  </section>
 </body>
 
 </html>
