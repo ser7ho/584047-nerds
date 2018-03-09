@@ -81,11 +81,11 @@
           <p class="heading info-heading">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="caption">Выполняем заказы на разработку:</p>
-          <ul class="info-list">
-            <li class="info-item">Веб-сайтов любой сложности</li>
-            <li class="info-item">Мобильные приложения для iOS и Android</li>
-            <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+            <ul class="info-list">
+              <li class="info-item">Веб-сайтов любой сложности</li>
+              <li class="info-item">Мобильные приложения для iOS и Android</li>
+              <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
         </section>
         <section class="info-stats">
           <h3 class="visually-hidden">Статистика</h3>
@@ -111,10 +111,10 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="partners-list">
-          <li class="partners-item"><a href="http://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
-          <li class="partners-item"><a href="#">Барбершоп</a></li>
-          <li class="partners-item"><a href="#">Пинк</a></li>
-          <li class="partners-item"><a href="#">Мишка</a></li>
+          <li class="partners-item"><a href="http://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html academy</span></a></li>
+          <li class="partners-item"><a href="#"><span class="visually-hidden">Барбершоп</span></a></li>
+          <li class="partners-item"><a href="#"><span class="visually-hidden">Пинк</span></a></li>
+          <li class="partners-item"><a href="#"><span class="visually-hidden">Мишка</span></a></li>
         </ul>
       </section>
     </div>
@@ -142,9 +142,9 @@
       <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <div class="discount">
@@ -156,9 +156,23 @@
 
   <section class="modal modal-write">
     <h2 class="visually-hidden">Форма для отправки письма</h2>
-    <p class="heading write-heading">Напишите нам</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <form class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="heading write-heading">Напишите нам</p>
+      <p class="modal-write-item">
+        <label for="modal-write-fullname">Ваше имя:</label>
+        <input id="modal-write-fullname" type="text" name="fullname" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-write-item">
+        <label for="modal-write-email">Ваш e-mail:</label>
+        <input id="modal-write-email" type="text" name="email" value="" placeholder="email@example.com">
+      </p>
+      <p class="modal-write-item">
+        <label for="modal-write-letter">Тексе письма:</label>
+        <textarea id="modal-write-letter" name="letter" placeholder="В свободной форме" rows="4"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 

@@ -37,7 +37,80 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="filter-price-block">
+              <div class="price-range">
+                <div class="price-from"><span class="visually-hidden">Стоимость от</span></div>
+                <div class="price-until"><span class="visually-hidden">Стоимость до</span></div>
+              </div>
+            </div>
+            <p class="filter-item">
+              <label for="filter-from">от</label>
+              <input class="filter-input filter-input-from" type="number" name="from" value="0" id="filter-from">
+              <label for="filter-until">до</label>
+              <input class="filter-input filter-input-until" type="number" name="until" value="15000" id="filter-until">
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fluid" id="filter-fluid">
+                <label for="filter-fluid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+                <label for="filter-advantage-block">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-cart">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-button" type="submit">Показать</button>
+        </form>
+      </section>
+
+      <section class="sort">
+        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <p>Сортировать:</p>
+        <ul class="sort-list">
+          <li class="sort-item sort-item-current"><a>по цене</a></li>
+          <li class="sort-item"><a href="#">по типу</a></li>
+          <li class="sort-item"><a href="#">по названию</a></li>
+        </ul>
+        <ul class="sort-direction-list">
+          <li class="sort-direction-item descending sort-direction-item-current"><a><span class="visually-hidden">Сортировать по убыванию</span></a></li>
+          <li class="sort-direction-list ascinding"><a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a></li>
+        </ul>
       </section>
 
       <section class="catalog">
@@ -127,9 +200,9 @@
       <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <div class="discount">
@@ -141,9 +214,23 @@
 
   <section class="modal modal-write">
     <h2 class="visually-hidden">Форма для отправки письма</h2>
-    <p class="heading write-heading">Напишите нам</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <form class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="heading write-heading">Напишите нам</p>
+      <p class="modal-write-item">
+        <label for="modal-write-fullname">Ваше имя:</label>
+        <input id="modal-write-fullname" type="text" name="fullname" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-write-item">
+        <label for="modal-write-email">Ваш e-mail:</label>
+        <input id="modal-write-email" type="text" name="email" value="" placeholder="email@example.com">
+      </p>
+      <p class="modal-write-item">
+        <label for="modal-write-letter">Тексе письма:</label>
+        <textarea id="modal-write-letter" name="letter" placeholder="В свободной форме" rows="4"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
