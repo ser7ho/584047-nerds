@@ -48,9 +48,9 @@
             </div>
             <p class="filter-item">
               <label for="filter-from">от</label>
-              <input class="filter-input filter-input-from" type="number" name="from" value="0" id="filter-from">
+              <input class="filter-input filter-input-from" type="text" name="from" value="0" id="filter-from">
               <label for="filter-until">до</label>
-              <input class="filter-input filter-input-until" type="number" name="until" value="15000" id="filter-until">
+              <input class="filter-input filter-input-until" type="text" name="until" value="15000" id="filter-until">
             </p>
           </fieldset>
           <fieldset>
@@ -99,81 +99,82 @@
         </form>
       </section>
 
-      <section class="sort">
-        <h2 class="visually-hidden">Сортировка товаров</h2>
-        <p>Сортировать:</p>
-        <ul class="sort-list">
-          <li class="sort-item sort-item-current"><a>по цене</a></li>
-          <li class="sort-item"><a href="#">по типу</a></li>
-          <li class="sort-item"><a href="#">по названию</a></li>
-        </ul>
-        <ul class="sort-direction-list">
-          <li class="sort-direction-item descending sort-direction-item-current"><a><span class="visually-hidden">Сортировать по убыванию</span></a></li>
-          <li class="sort-direction-list ascinding"><a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a></li>
-        </ul>
-      </section>
-
-      <section class="catalog">
+      <section class="catalog-templates">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
+        <div class="sort">
+          <h2 class="visually-hidden">Сортировка товаров</h2>
+          <p>Сортировать:</p>
+          <ul class="sort-list">
+            <li class="sort-item sort-item-current"><a>по цене</a></li>
+            <li class="sort-item"><a href="#">по типу</a></li>
+            <li class="sort-item"><a href="#">по названию</a></li>
+          </ul>
+          <ul class="sort-direction-list">
+            <li class="sort-direction-item descending sort-direction-item-current"><a><span class="visually-hidden">Сортировать по убыванию</span></a></li>
+            <li class="sort-direction-list ascinding"><a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a></li>
+          </ul>
+        </div>
 
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
-            <div class="hover-item">
-              <a href="#"><h3 class="title">Sedona</h3></a>
-              <p>Информационный сайт<br> для туристов</p>
-              <a class="button catalog-btn" href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink app">
-            <div class="hover-item">
-              <a href="#"><h3 class="title">Pink app</h3></a>
-              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-              <a class="button catalog-btn" href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
-            <div class="hover-item">
-              <a href="#"><h3 class="title">Barbershop</h3></a>
-              <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
-              <a class="button catalog-btn" href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
-            <div class="hover-item">
-              <a href="#"><h3 class="title">Mishka</h3></a>
-              <p>Интернет магазин<br> вязаных игрушек</p>
-              <a class="button catalog-btn" href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A plus">
-            <div class="hover-item">
-              <a href="#"><h3 class="title">A plus</h3></a>
-              <p>Лендинг курсов повышения<br> квалификации
-              </p>
-              <a class="button catalog-btn" href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
-            <div class="hover-item">
-              <a href="#"><h3 class="title">Кваст</h3></a>
-              <p>Промо-сайт производителя<br> крафтового кваса</p>
-              <a class="button catalog-btn" href="#">9 900 руб.</a>
-            </div>
-          </li>
-        </ul>
+        <div class="catalog">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
+              <div class="hover-item">
+                <a href="#"><h3 class="title">Sedona</h3></a>
+                <p>Информационный сайт<br> для туристов</p>
+                <a class="button catalog-btn" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink app">
+              <div class="hover-item">
+                <a href="#"><h3 class="title">Pink app</h3></a>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <a class="button catalog-btn" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
+              <div class="hover-item">
+                <a href="#"><h3 class="title">Barbershop</h3></a>
+                <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
+                <a class="button catalog-btn" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
+              <div class="hover-item">
+                <a href="#"><h3 class="title">Mishka</h3></a>
+                <p>Интернет магазин<br> вязаных игрушек</p>
+                <a class="button catalog-btn" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A plus">
+              <div class="hover-item">
+                <a href="#"><h3 class="title">A plus</h3></a>
+                <p>Лендинг курсов повышения<br> квалификации
+                </p>
+                <a class="button catalog-btn" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
+              <div class="hover-item">
+                <a href="#"><h3 class="title">Кваст</h3></a>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
+                <a class="button catalog-btn" href="#">9 900 руб.</a>
+              </div>
+            </li>
+          </ul>
 
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">1</li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
-        </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current">1</li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+          </ul>
+        </div>
       </section>
 
     </div>
@@ -182,7 +183,6 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
-        <img src="img/map-marker.png" width="231" height="190" alt="Указатель офиса на карте">
       </div>
       <div class="container">
         <section class="address">
@@ -200,9 +200,9 @@
       <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <div class="discount">
@@ -212,8 +212,9 @@
     </div>
   </footer>
 
-  <section class="modal modal-write">
+  <div class="modal modal-write">
     <h2 class="visually-hidden">Форма для отправки письма</h2>
+    <button class="modal-close" type="button">Закрыть</button>
     <form class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="heading write-heading">Напишите нам</p>
       <p class="modal-write-item">
@@ -230,8 +231,7 @@
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
-  </section>
+  </div>
 </body>
 
 </html>
