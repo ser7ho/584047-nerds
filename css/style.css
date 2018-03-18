@@ -57,7 +57,6 @@ img {
 .main-header {
   background: #eee;
   padding-top: 50px;
-  padding-bottom: 15px;
 }
 
 .main-navigation {
@@ -115,24 +114,19 @@ img {
 }
 
 .promo-item:first-child {
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 430px;
+  background: url("../img/slide1.png") no-repeat 430px 18px;
 }
 
 .promo-item:nth-child(2) {
-  background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 430px;
+  background: url("../img/slide2.png") no-repeat 496px 0;
 }
 
 .promo-item:last-child {
-  background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 430px;
+  background: url("../img/slide3.png") no-repeat 400px 19px;
+}
+
+.promo-item {
+  paddin-bottom: 80px;
 }
 
 .promo-list {
@@ -288,53 +282,18 @@ img {
   align-items: center;
 }
 
-.partners-item:first-child img {
+.partners-item img {
   opacity: 0.2;
 }
 
-.partners-item:first-child:hover img {
+.partners-item:hover img {
   opacity: 1;
 }
 
-.partners-item:first-child:active img {
+.partners-item:active img {
   opacity: 0.1;
 }
 
-.partners-item:nth-child(2) img {
-  opacity: 0.2;
-}
-
-.partners-item:nth-child(2):hover img {
-  opacity: 1;
-}
-
-.partners-item:nth-child(2):active img {
-  opacity: 0.1;
-}
-
-.partners-item:nth-child(3) img {
-  opacity: 0.2;
-}
-
-.partners-item:nth-child(3):hover img {
-  opacity: 1;
-}
-
-.partners-item:nth-child(3):active img {
-  opacity: 0.1;
-}
-
-.partners-item:last-child img {
-  opacity: 0.2;
-}
-
-.partners-item:last-child:hover img {
-  opacity: 1;
-}
-
-.partners-item:last-child:active img {
-  opacity: 0.1;
-}
 
 .contacts {
   width: 1440px;
@@ -347,7 +306,7 @@ img {
   color: #666;
 }
 
-.main-footer .container {
+.footer-container {
   display: flex;
   align-items: center;
 }
@@ -395,12 +354,12 @@ img {
   padding-bottom: 105px;
 }
 
-.catalog-main .container {
+.catalog-container {
   display: flex;
   justify-content: space-between;
 }
 
-.filter {
+.filters {
   width: 260px;
 }
 
