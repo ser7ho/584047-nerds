@@ -166,9 +166,9 @@
 
   <div class="modal modal-write">
     <h2 class="visually-hidden">Форма для отправки письма</h2>
-    <input class="modal-close" type="image" src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
+    <p class="modal-heading">Напишите нам</p>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="modal-heading">Напишите нам</p>
       <p class="modal-item">
         <label for="modal-fullname">Ваше имя:</label>
         <input id="modal-fullname" type="text" name="fullname" value="" placeholder="Имя Фамилия">
@@ -181,7 +181,7 @@
         <label for="modal-letter">Тексе письма:</label>
         <textarea id="modal-letter" name="letter" placeholder="В свободной форме" rows="4"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button modal-btn" type="submit">Отправить</button>
     </form>
   </div>
 </body>

@@ -94,7 +94,6 @@ img {
   display: block;
 }
 
-
 .cart-link {
   position: relative;
   padding: 0 0 0 40px;
@@ -132,7 +131,6 @@ img {
 .promo-heading {
   margin: 0 0 27px;
   width: 520px;
-
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -192,7 +190,6 @@ img {
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .slider-controls span::after {
@@ -459,7 +456,6 @@ img {
   margin: 0 0 0 55px;
 }
 
-
 .contacts {
   width: 1440px;
   margin: 0 auto;
@@ -563,7 +559,6 @@ img {
   background-color: #d7373b;
   background-image: url("../img/insta-active.svg");
 }
-
 
 .discount {
   width: 560px;
@@ -684,7 +679,7 @@ img {
   cursor: pointer;
 }
 
-.filter-input-radio + label::before {
+.filter-input-radio+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -693,11 +688,11 @@ img {
   background: url("../img/radio-off.svg") no-repeat 0 0;
 }
 
-.filter-input-radio:checked + label::before {
+.filter-input-radio:checked+label::before {
   background: url("../img/radio-on.svg") no-repeat 0 0;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -706,7 +701,7 @@ img {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-.filter-input-checkbox:checked + label::before {
+.filter-input-checkbox:checked+label::before {
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
@@ -721,8 +716,8 @@ img {
   opacity: 1;
 }
 
-.filter-input-radio:disabled + label,
-.filter-input-checkbox:disabled + label {
+.filter-input-radio:disabled+label,
+.filter-input-checkbox:disabled+label {
   opacity: 0.1;
 }
 
@@ -846,7 +841,6 @@ img {
   width: 10px;
   height: 10px;
   vertical-align: middle;
-
 }
 
 .direction-up a {
@@ -887,7 +881,6 @@ img {
   opacity: 1;
 }
 
-
 .catalog-list {
   list-style: none;
   padding: 0;
@@ -927,7 +920,6 @@ img {
 .catalog-item:hover .hover-item {
   z-index: 1;
 }
-
 
 .hover-item {
   position: absolute;
@@ -987,13 +979,13 @@ img {
   border-radius: 5px;
 }
 
-.pagination-item-current a{
+.pagination-item-current a {
   padding: 14px 0;
   background-color: #fff;
   border: 3px solid #dbdbdb;
 }
 
-.pagination-item:last-child a{
+.pagination-item:last-child a {
   width: 260px;
 }
 
@@ -1003,7 +995,7 @@ img {
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus{
+.pagination-item a:focus {
   background-color: #dfdfdf;
 }
 
@@ -1016,21 +1008,51 @@ img {
 
 /*--------------------------------modal-----------------------------------*/
 
-.modal-heading {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
-  color: #000;
-}
-
 .modal {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 960px;
+  padding: 68px 100px 84px;
   font-size: 16px;
   line-height: 18px;
+  background-color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
 .modal-close {
   opacity: 0.3;
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-close:before,
+.modal-close:after {
+  position: absolute;
+  top: -3px;
+  left: 9px;
+  content: "";
+  width: 4px;
+  height: 27px;
+  background-color: #fb565a;
+}
+
+.modal-close:before {
+  transform: rotate(45deg);
+}
+
+.modal-close:after {
+  transform: rotate(-45deg);
 }
 
 .modal-close:hover,
@@ -1043,14 +1065,52 @@ img {
 }
 
 .modal label {
+  margin: 0 0 10px;
   font-weight: 700;
   color: #000;
 }
 
+.modal-heading {
+  margin: 0 0 40px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000;
+}
+
+.modal-form {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-item {
+  margin: 0;
+  max-width: 760px;
+}
+
+.modal-item input,
+.modal-item label {
+  display: block;
+  width: 360px;
+}
+
 .modal-item input,
 .modal-item textarea {
+  box-sizing: border-box;
   color: #444;
   border: 2px solid #d7dcde;
+}
+
+.modal-item input {
+  margin: 0 0 35px;
+  padding: 14px;
+}
+
+.modal-item textarea {
+  width: 760px;
+  padding: 10px;
 }
 
 .modal-item input:hover,
@@ -1069,4 +1129,9 @@ img {
 .modal-item textarea:invalid {
   color: #e74246;
   border: 2px solid #e74246;
+}
+
+.modal-btn {
+  width: 260px;
+  margin: 50px 0 0;
 }
