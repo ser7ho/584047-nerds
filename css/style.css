@@ -690,11 +690,11 @@ img {
   left: 0;
   width: 26px;
   height: 26px;
-  background: url("../img/radio-off.svg") no-repeat 50% 50%;
+  background: url("../img/radio-off.svg") no-repeat 0 0;
 }
 
 .filter-input-radio:checked + label::before {
-  background: url("../img/radio-on.svg") no-repeat 50% 50%;
+  background: url("../img/radio-on.svg") no-repeat 0 0;
 }
 
 .filter-input-checkbox + label::before {
@@ -703,11 +703,11 @@ img {
   left: 0;
   width: 28px;
   height: 24px;
-  background: url("../img/checkbox-off.svg") no-repeat 50% 50%;
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
 .filter-input-checkbox:checked + label::before {
-  background: url("../img/checkbox-on.svg") no-repeat 50% 50%;
+  background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
 .filter-option label {
