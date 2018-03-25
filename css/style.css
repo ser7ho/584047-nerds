@@ -733,14 +733,15 @@ img {
 
 .price-range {
   position: relative;
-  width: 140px;
+  width: 100%;
   height: 2px;
   background: #d7dcde;
+  cursor: pointer;
 }
 
 .bar {
   height: 2px;
-  width: 100%;
+  width: 140px;
   background: #00ca74;
 }
 
@@ -756,7 +757,6 @@ img {
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .price-range::before {
