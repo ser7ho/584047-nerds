@@ -720,7 +720,8 @@ img {
 }
 
 .filter-option label:hover,
-.filter-option label:focus {
+.filter-input-radio:focus+label,
+.filter-input-checkbox:focus+label {
   color: #000;
   opacity: 1;
 }
