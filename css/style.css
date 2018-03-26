@@ -456,20 +456,26 @@ img {
   margin: 0 0 0 55px;
 }
 
-.contacts {
-  width: 1440px;
-  margin: 0 auto;
+.address-container {
   position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 
 .address {
   padding: 50px 50px 47px;
   box-sizing: border-box;
   position: absolute;
-  top: 55px;
-  left: 140px;
+  top: -365px;
+  left: 20px;
   content: "";
   width: 320px;
+  max-height: 308px;
+  overflow-y: auto;
   background-color: #fff;
 }
 
@@ -676,13 +682,15 @@ img {
 
 .filter-option label {
   display: block;
+  position: relative;
   cursor: pointer;
 }
 
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -35px;
+  top: -3px;
   width: 26px;
   height: 26px;
   background: url("../img/radio-off.svg") no-repeat 0 0;
@@ -695,7 +703,8 @@ img {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -35px;
+  top: 0;
   width: 28px;
   height: 24px;
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
@@ -710,8 +719,8 @@ img {
   opacity: 0.4;
 }
 
-.filter-option:hover label,
-.filter-option:focus label {
+.filter-option label:hover,
+.filter-option label:focus {
   color: #000;
   opacity: 1;
 }
@@ -838,17 +847,17 @@ img {
 .direction-item a {
   display: block;
   margin: 10px 0;
-  width: 10px;
+  width: 12px;
   height: 10px;
   vertical-align: middle;
 }
 
 .direction-up a {
-  background-image: url("../img/icon-up-dir.svg");
+  background: url("../img/icon-up-dir.svg") no-repeat 0 0;
 }
 
 .direction-down a {
-  background-image: url("../img/icon-down-dir.svg");
+  background: url("../img/icon-down-dir.svg") no-repeat 0 0;
 }
 
 .sort .title {
