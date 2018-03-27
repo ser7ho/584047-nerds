@@ -6,7 +6,7 @@
   <title>Дизайн-студия «Нёрдс»</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -133,19 +133,18 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map">
+        <div class="container address-container">
+          <section class="address">
+            <h3 class="title">Nёrds design studio</h3>
+            <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7(812)275-75-75</p>
+            <a class="button contact-btn" href="contacts.html">Напишите нам</a>
+          </section>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251744543!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522059255714"
-          width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="container address-container">
-        <section class="address">
-          <h3 class="title">Nёrds design studio</h3>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7(812)275-75-75</p>
-          <a class="button contact-btn" href="contacts.html">Напишите нам</a>
-        </section>
+          width="1440" height="416" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
-
   </main>
 
   <footer class="main-footer">
@@ -165,6 +164,7 @@
     </div>
   </footer>
 
+  <div class="overlay"></div>
   <div class="modal modal-write">
     <h2 class="visually-hidden">Форма для отправки письма</h2>
     <button class="modal-close" type="button">Закрыть</button>
@@ -185,6 +185,8 @@
       <button class="button modal-btn" type="submit">Отправить</button>
     </form>
   </div>
+
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
