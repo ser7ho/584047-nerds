@@ -185,6 +185,7 @@ img {
 .slider-controls span {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 18px;
   height: 18px;
   padding: 8px;
