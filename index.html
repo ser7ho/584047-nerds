@@ -6,7 +6,7 @@
   <title>Дизайн-студия «Нёрдс»</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -35,13 +35,13 @@
     <section class="promo">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="slider-controls">
-          <span class="slider-controls-current"></span>
-          <span></span>
-          <span></span>
-        </div>
+        <ul class="slider-controls">
+          <li class="slider-controls-current slider-item"></li>
+          <li class="slider-item"></li>
+          <li class="slider-item"></li>
+        </ul>
         <ul class="promo-list">
-          <li class="promo-item">
+          <li class="promo-item promo-item-current">
             <p class="promo-heading">Долго, дорого, скрупулезно.</p>
             <p class="promo-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения
             </p>
@@ -186,7 +186,7 @@
     </form>
   </div>
 
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

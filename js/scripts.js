@@ -18,6 +18,36 @@ try {
   isStorageSupport = false;
 }
 
+var slides = document.querySelectorAll('.promo-item');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,4000);
+var sliderControl = document.querySelectorAll(".slider-item");
+
+for (var i = 0; i < sliderControl.length; i++) {
+  selectSlide(i);
+}
+
+function selectSlide(nth) {
+  sliderControl[nth].addEventListener("click", function(evt) {
+    clearInterval(slideInterval);
+    slides[currentSlide].classList.remove("promo-item-current");
+    sliderControl[currentSlide].classList.remove("slider-controls-current");
+    currentSlide = nth;
+    slideInterval = setInterval(nextSlide,4000);
+    slides[nth].classList.add("promo-item-current");
+    sliderControl[nth].classList.add("slider-controls-current");
+  });
+}
+
+function nextSlide() {
+slides[currentSlide].classList.remove("promo-item-current");
+sliderControl[currentSlide].classList.remove("slider-controls-current");
+currentSlide = (currentSlide+1)%slides.length;
+slides[currentSlide].classList.add("promo-item-current");
+sliderControl[currentSlide].classList.add("slider-controls-current");
+}
+
+
 contactBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalWrite.classList.add("modal-show");
